@@ -1,0 +1,35 @@
+.header {
+  padding: 0.2rem;
+  background-color: black;
+
+  .header__container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+
+  &__logo {
+    max-width: 20rem;
+  }
+
+  &__links {
+    display: flex;
+    margin: 0 2rem;
+
+    a {
+      color: red;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__item {
+      font-size: 2.7rem;
+      margin: 0 2rem;
+      border: 1px solid rgb(195, 151, 42);
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+  }
+}
