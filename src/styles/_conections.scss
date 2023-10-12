@@ -1,5 +1,5 @@
-.hero {
-  height: 90.5vh;
+.conection {
+  height: 90vh;
   position: relative;
   overflow: hidden;
 
@@ -34,14 +34,14 @@
       right: 150px;
       width: 500px;
 
-      .title {
+      &__title {
         font-size: 3.5rem;
         color: rgb(195, 151, 42);
         text-transform: uppercase;
         text-align: center;
       }
 
-      .text {
+      &__text {
         color: red;
         font-size: 1.6rem;
         line-height: 35px;
