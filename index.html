@@ -17,15 +17,35 @@
             alt="Logo Jujustu kaizen 0"
           />
         </h1>
+        <div class="menu-hamburguer">
+          <span class="one hamburguer"></span>
+          <span class="two hamburguer"></span>
+          <span class="three hamburguer"></span>
+        </div>
         <ul class="header__links">
           <li class="header__links__item">
-            <a href="#">Sobre os personagens</a>
+            <a
+              data-tab-link="sobre"
+              class="header__links__item__item header__links__item--is-active"
+              href="#sobre"
+              >Sobre os personagens</a
+            >
           </li>
           <li class="header__links__item">
-            <a href="#">Curiosidades</a>
+            <a
+              data-tab-link="curiosidades"
+              class="header__links__item__item"
+              href="#curiosidades"
+              >Curiosidades</a
+            >
           </li>
           <li class="header__links__item">
-            <a href="#">Conexão com a historia principal</a>
+            <a
+              data-tab-link="conexao"
+              class="header__links__item__item"
+              href="#conexao"
+              >Conexão com a historia principal</a
+            >
           </li>
         </ul>
       </div>
@@ -49,124 +69,149 @@
             sapiente hic est! Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Perferendis nam doloremque eius beatae numquam, deleniti nisi
             excepturi quam velit voluptatum placeat facilis, ipsum quas nihil.
-            Explicabo totam possimus earum laborum <br />
+            Explicabo totam possimus earum laborum <br /><br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae
             nemo nesciunt debitis deserunt corrupti ut quis, veniam id, ad porro
             inventore maxime ratione iste saepe non sapiente repudiandae eius?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Consectetur nisi vel nulla at magnam autem, nihil ipsam quae neque
             laudantium, quis rem molestias recusandae quasi accusamus qui!
-            Autem, suscipit veritatis!
+            Autem, suscipit veritatis! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. <br /><br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+            molestiae totam nostrum eius. Quo accusamus eaque, magnam tempore
+            recusandae vitae ullam reprehenderit rerum sit laboriosam incidunt
+            modi provident! Dolore, nostrum
           </p>
         </div>
       </div>
     </section>
-    <section class="characters">
-      <div class="characters__title">
-        <button class="characters__button--is-active">
-          Sobre os personagens
-        </button>
-        <button class="characters__button">Curiosidades</button>
-        <button class="characters__button">
-          Conexão com a historia principal
-        </button>
-      </div>
-      <div class="characters__container characters__container--is-active">
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Gojo.png" alt="Saturo Gojo" />
+    <div class="tab">
+      <button
+        data-tab-button="sobre"
+        class="tab__button tab__button--is-active"
+      >
+        Sobre os personagens
+      </button>
+      <button data-tab-button="curiosidades" class="tab__button">
+        Curiosidades
+      </button>
+      <button data-tab-button="conexao" class="tab__button">
+        Conexão com a historia principal
+      </button>
+    </div>
+    <div
+      id="sobre"
+      data-tab-id="sobre"
+      class="shows__list shows__list--is-active"
+    >
+      <section class="characters">
+        <div class="characters__container">
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Gojo.png" alt="Saturo Gojo" />
+          </div>
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Yuta.webp" alt="Yuta" />
+          </div>
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Geto.webp" alt="Geto" />
+          </div>
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Inumaki.webp" alt="Inumaki" />
+          </div>
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Maki_Zenin.webp" alt="Maki" />
+          </div>
+          <div class="characters__box">
+            <img src="./src/images/Personagens/Panda.webp" alt="Panda" />
+          </div>
         </div>
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Yuta.webp" alt="Yuta" />
+      </section>
+    </div>
+
+    <div id="curiosidades" data-tab-id="curiosidades" class="shows__list">
+      <section class="curious">
+        <div class="curious__content">
+          <div class="curious__content__box">
+            <img
+              class="curious__content__box__img"
+              src="./src/images/backgound-image.jpg"
+              alt="Yuta Jujustu"
+            />
+            <span class="curious__content__box__gradient"></span>
+          </div>
+          <div class="curious__content__text">
+            <h2 class="curious__content__text__title">Curiosidades</h2>
+            <p class="curious__content__text__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              velit tenetur assumenda possimus ad odit laborum nihil, odio iure
+              hic consectetur tempore excepturi inventore veritatis non
+              laboriosam esse quidem. Ullam! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Veritatis sint maxime omnis velit
+              quibusdam odit praesentium quasi debitis quam nihil impedit harum
+              nemo iste adipisci fuga et, at aspernatur repellat! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Earum explicabo
+              consequuntur non assumenda magnam sapiente accusamus ratione velit
+              autem, porro ipsa vel ea repudiandae est magni inventore nemo ut
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              eos nam cum, sint est praesentium <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              laborum minus distinctio illo magni numquam saepe cupiditate
+              temporibus consectetur modi nesciunt, laboriosam earum. Corrupti,
+              dolore? Natus corporis dolorem cum maiores. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quia repellendus necessitatibus
+              doloribus vitae laborum qui, expedita laudantium placeat ducimus!
+              Sint perspiciatis cum quo voluptates eveniet, eos nesciunt totam
+              non porro?
+            </p>
+          </div>
         </div>
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Geto.webp" alt="Geto" />
+      </section>
+    </div>
+    <div id="conexao" data-tab-id="conexao" class="shows__list">
+      <section class="conection">
+        <div class="conection__content">
+          <div class="conection__content__box">
+            <img
+              class="conection__content__box__img"
+              src="./src/images/background-image2.jpg"
+              alt=" Jujustu kaizen 0"
+            />
+            <span class="conection__content__box__gradient"></span>
+          </div>
+          <div class="conection__content__text">
+            <h2 class="conection__content__text__title">
+              Conexão com a história principal
+            </h2>
+            <p class="conection__content__text__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              velit tenetur assumenda possimus ad odit laborum nihil, odio iure
+              hic consectetur tempore excepturi inventore veritatis non
+              laboriosam esse quidem. Ullam! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Veritatis sint maxime omnis velit
+              quibusdam odit praesentium quasi debitis quam nihil impedit harum
+              nemo iste adipisci fuga et, at aspernatur<br /><br />
+              repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Earum explicabo consequuntur non assumenda magnam sapiente
+              accusamus ratione velit autem, porro ipsa vel ea repudiandae est
+              magni inventore nemo ut Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Commodi eos nam cum, sint est praesentium Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Quo laborum
+              minus distinctio illo magni numquam saepe cupiditate <br /><br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+              facilis voluptates at, sit quas beatae veniam, eos provident odit
+              qui suscipit in quaerat voluptatum nostrum sequi iste distinctio
+              libero blanditiis?
+            </p>
+          </div>
         </div>
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Inumaki.webp" alt="Inumaki" />
-        </div>
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Maki_Zenin.webp" alt="Maki" />
-        </div>
-        <div class="characters__box">
-          <img src="./src/images/Personagens/Panda.webp" alt="Panda" />
-        </div>
-        <div class="characters__container__button">
-          <button class="haracters__container__button">
-            Ver mais<i class="ph ph-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="curious">
-      <div class="curious__content">
-        <div class="curious__content__box">
-          <img
-            class="curious__content__box__img"
-            src="./src/images/backgound-image.jpg"
-            alt="Yuta Jujustu"
-          />
-          <span class="curious__content__box__gradient"></span>
-        </div>
-        <div class="curious__content__text">
-          <h2 class="curious__content__text__title">Curiosidades</h2>
-          <p class="curious__content__text__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            velit tenetur assumenda possimus ad odit laborum nihil, odio iure
-            hic consectetur tempore excepturi inventore veritatis non laboriosam
-            esse quidem. Ullam! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Veritatis sint maxime omnis velit quibusdam odit
-            praesentium quasi debitis quam nihil impedit harum nemo iste
-            adipisci fuga et, at aspernatur repellat! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Earum explicabo consequuntur non
-            assumenda magnam sapiente accusamus ratione velit autem, porro ipsa
-            vel ea repudiandae est magni inventore nemo ut Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Commodi eos nam cum, sint est
-            praesentium <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum
-            minus distinctio illo magni numquam saepe cupiditate temporibus
-            consectetur modi nesciunt, laboriosam earum. Corrupti, dolore? Natus
-            corporis dolorem cum maiores.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="conection">
-      <div class="conection__content">
-        <div class="conection__content__box">
-          <img
-            class="conection__content__box__img"
-            src="./src/images/background-image2.jpg"
-            alt=" Jujustu kaizen 0"
-          />
-          <span class="conection__content__box__gradient"></span>
-        </div>
-        <div class="conection__content__text">
-          <h2 class="conection__content__text__title">
-            Conexão com a história principal
-          </h2>
-          <p class="conection__content__text__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            velit tenetur assumenda possimus ad odit laborum nihil, odio iure
-            hic consectetur tempore excepturi inventore veritatis non laboriosam
-            esse quidem. Ullam! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Veritatis sint maxime omnis velit quibusdam odit
-            praesentium quasi debitis quam nihil impedit harum nemo iste
-            adipisci fuga et, at aspernatur repellat! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Earum explicabo consequuntur non
-            assumenda magnam sapiente accusamus ratione velit autem, porro ipsa
-            vel ea repudiandae est magni inventore nemo ut Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Commodi eos nam cum, sint est
-            praesentium <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum
-            minus distinctio illo magni numquam saepe cupiditate
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
     <section class="faq">
       <h2 class="title">Duvidas frequentes</h2>
       <ul class="faq__questions">
-        <li class="faq__questions__item--is-open">
+        <li class="faq__questions__item">
           <div class="faq__questions__item__question" data-faq-question>
             Bastidores do filme e curiosidades
           </div>
@@ -253,5 +298,6 @@
         <p>&copyGustavoMarquesDev</p>
       </div>
     </footer>
+    <script src="./dist/js/main.js"></script>
   </body>
 </html>

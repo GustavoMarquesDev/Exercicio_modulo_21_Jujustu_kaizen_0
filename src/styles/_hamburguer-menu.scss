@@ -1,0 +1,28 @@
+.header__container {
+  position: relative;
+
+  .menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    margin: 0px 10px;
+    display: none;
+
+    @media (max-width: 1062px) {
+      & {
+        display: block;
+      }
+    }
+
+    span {
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      display: block;
+      margin-bottom: 4px;
+      transition-duration: 0.3s;
+    }
+  }
+}

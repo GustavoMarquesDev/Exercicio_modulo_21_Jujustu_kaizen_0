@@ -5,6 +5,7 @@
 @use "./conections";
 @use "./faq";
 @use "./footer";
+@use "./hamburguer-menu";
 
 @font-face {
   font-family: Avenir;
@@ -28,4 +29,5 @@ body,
   text-decoration: none;
   font-family: Avenir, sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
